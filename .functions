@@ -38,8 +38,13 @@ id() {
 
 #Keyboard
 build() {
-	 qmk && make $1/$2:$1-grid-JERRIK:dfu
+  if [ -z "$2" ]; then
+    echo "2 parameters are required for this function"
+  else
+	  qmk && make $1/$2:$1:dfu
+  fi
 }
+
 kb() {
    if [ $1 = "hhkb" ]; then
     qmk && cd keyboards/$1/keymaps/$1-JERRIK

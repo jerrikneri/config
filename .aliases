@@ -25,6 +25,9 @@ alias js-hot="npm run hot:ops"
 alias js-watch="npm run watch"
 alias tw="js test:watch"
 
+#Node
+alias noup="DEBUG=myapp:* npm start"
+
 #Jekyll
 alias jserve="bundle exec jekyll serve"
 
