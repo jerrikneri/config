@@ -36,6 +36,7 @@ id() {
   fi
 }
 
+<<<<<<< HEAD
 #Keyboard
 build() {
   if [ -z "$2" ]; then
@@ -53,10 +54,13 @@ kb() {
    fi
 }
 
+=======
+>>>>>>> dd12df56d7d66f567a9ecde9eba6f0e02163131b
 #Laravel
 ca() {
-  art cache:clear && art config:clear && cda
+  art cache:clear && art config:clear && art clear-compiled && cda
  }
+
 migrate-tenant() {
   if [ -z "$1" ]
   then
@@ -65,9 +69,11 @@ migrate-tenant() {
     php artisan migrate:tenants --tenantdb=$1
   fi
 }
+
 m-sl() {
   migrate-main && migrate-test && art migrate:tenants && migrate-deliverability
 }
+
 pu() {
   if [ -z "$1" ]
   then

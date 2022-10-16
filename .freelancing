@@ -1,0 +1,3 @@
+# TP
+alias tpp="cd ~/code/portal"
+alias tpup="sqlstart && tpp && php artisan serve --host=trialpartners.local --port=8080 --env=.env"
