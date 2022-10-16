@@ -36,26 +36,6 @@ id() {
   fi
 }
 
-<<<<<<< HEAD
-#Keyboard
-build() {
-  if [ -z "$2" ]; then
-    echo "2 parameters are required for this function"
-  else
-	  qmk && make $1/$2:$1:dfu
-  fi
-}
-
-kb() {
-   if [ $1 = "hhkb" ]; then
-    qmk && cd keyboards/$1/keymaps/$1-JERRIK
-   else
-	  cd ~/Keyboard/QMK/keyboards/$1/keymaps/$1-grid-JERRIK
-   fi
-}
-
-=======
->>>>>>> dd12df56d7d66f567a9ecde9eba6f0e02163131b
 #Laravel
 ca() {
   art cache:clear && art config:clear && art clear-compiled && cda
