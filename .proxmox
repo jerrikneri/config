@@ -1,0 +1,3 @@
+alias pssh="ssh root@$PROXMOX_IP"
+
+alias pveup="wakeonlan -i $PROXMOX_IP $PROXMOX_MA"

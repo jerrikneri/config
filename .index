@@ -7,5 +7,6 @@ source ~/Config/.format
 source ~/Config/.fp
 source ~/Config/.freelancing
 source ~/Config/.kb
+source ~/Config/.proxmox
 source ~/Config/.sandbox
 source ~/Config/.wsl
