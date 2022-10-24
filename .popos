@@ -1,0 +1,1 @@
+alias pveup="wakeonlan $PROXMOX_MA"
