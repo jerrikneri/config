@@ -1,1 +1,18 @@
+# Overwrite
 alias pveup="wakeonlan $PROXMOX_MA"
+
+alias gpu-d="sudo system76-power graphics nvidia"
+alias gpu-i="sudo system76-power graphics integrated"
+alias gpu-h="sudo system76-power graphics hybrid"
+
+
+alias sudo="sudo "
+
+
+_flash_preonic() {
+    echo "qmk compile -kb preonic/rev3_drop -km jerrik"
+}
+
+sudo_build() {
+    sudo zsh -c "$(declare -f _flash_preonic)"'; _flash_preonic "$@"' sudo_build "$@"
+}
