@@ -7,3 +7,15 @@ defaults write com.apple.screencapture type jpg
 
 Make Icons in Dock Transparent when "Hidden"
 defaults write com.apple.DOCK showhidden -bool TRUE && killall Dock
+
+
+# Linux
+Ubuntu:
+
+sudo apt-get install xcape
+Step 2. Run the command
+# make CapsLock behave like Ctrl:
+setxkbmap -option ctrl:nocaps
+
+# make short-pressed Ctrl behave like Escape:
+xcape -e 'Control_L=Escape'
