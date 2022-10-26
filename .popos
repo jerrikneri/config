@@ -7,7 +7,7 @@ alias gpu-h="sudo system76-power graphics hybrid"
 
 
 alias sudo="sudo "
-
+alias upg="sudo apt update && sudo apt ugprade"
 
 _flash_preonic() {
     echo "qmk compile -kb preonic/rev3_drop -km jerrik"
