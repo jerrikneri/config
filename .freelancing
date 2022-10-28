@@ -4,5 +4,7 @@ alias tpup="sqlstart && tpp && php artisan serve --host=trialpartners.local --po
 
 # PSI
 alias psi="cd ~/code/psi"
-alias psiup-fe="psi && nvm use 16.13 && cd psi-frontend && is"
-alias psiup-be="psi && cd psi-backend && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"
+alias psife="psi && cd psi-frontend"
+alias psibe="psi && cd psi-backend"
+alias psife-up="psife && nvm use 16.13 && is"
+alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"
