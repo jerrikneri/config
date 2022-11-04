@@ -4,6 +4,7 @@ source ~/Config/.functions
 source ~/Config/.format
 
 
+source ~/Config/.fedora
 source ~/Config/.fp
 source ~/Config/.freelancing
 source ~/Config/.kb

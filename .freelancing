@@ -1,10 +1,10 @@
 # TP
 alias tpp="cd ~/code/portal"
-alias tpup="sqlstart && tpp && php artisan serve --host=trialpartners.local --port=8080 --env=.env"
+# alias tpup="sqlstart && tpp && php artisan serve --host=trialpartners.local --port=8080 --env=.env"
 
 # PSI
 alias psi="cd ~/code/psi"
 alias psife="psi && cd psi-frontend"
 alias psibe="psi && cd psi-backend"
 alias psife-up="psife && nvm use 16.13 && is"
-alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"
+# alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"

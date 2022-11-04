@@ -1,0 +1,5 @@
+# OVERWRITES
+alias tpup="tpp && php artisan serve --host=trialpartners.local --port=8080 --env=.env"
+alias psibe-up="psibe && php artisan serve --host=psi.local --port=8000 --env=.env"
+
+alias upg="sudo dnf update && sudo dnf upgrade"
