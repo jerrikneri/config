@@ -19,3 +19,6 @@ setxkbmap -option ctrl:nocaps
 
 # make short-pressed Ctrl behave like Escape:
 xcape -e 'Control_L=Escape'
+
+# MYSQL
+ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
