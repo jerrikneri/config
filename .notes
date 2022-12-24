@@ -22,3 +22,7 @@ xcape -e 'Control_L=Escape'
 
 # MYSQL
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+
+# Windows
+git config --global core.autocrlf false # ^M issue 
