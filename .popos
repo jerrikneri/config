@@ -5,6 +5,6 @@ alias gpu-d="sudo system76-power graphics nvidia"
 alias gpu-i="sudo system76-power graphics integrated"
 alias gpu-h="sudo system76-power graphics hybrid"
 
-alias upg="sudo apt update && sudo apt ugprade"
+alias upg="sudo apt update && sudo apt ugprade -y"
 
 alias preonic="sudo dfu-util -a 0 -D ./.build/preonic_rev3_drop_jerrik.bin -s 0x08000000:131072"
