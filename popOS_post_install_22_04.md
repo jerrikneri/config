@@ -109,6 +109,12 @@ sudo apt install librewolf -y
 
 `python3 -m pip install --user qmk`
 
+`echo 'PATH="$HOME/.local/bin:$PATH"' >> $HOME/.zshrc && source $HOME/.zshrc`
+
+`mkdir ~/Keyboard && cd ~/Keyboard && git clone git@github.com:jerrikneri/qmk_firmware.git QMK`
+
+`build $PREONIC|$PLANCK`
+
 ---
 
 ## Local Dev Environment
