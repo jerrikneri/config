@@ -151,3 +151,9 @@ NVM
 
 - Vitals
 - Tweaks & Extensions in System Menu
+
+
+
+## Sleep
+
+`sudo kernelstub -a mem_sleep_default=deep`
