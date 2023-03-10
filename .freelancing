@@ -3,13 +3,11 @@ alias 74ci="/usr/bin/php7.4 /usr/local/bin/composer install"
 
 # TP
 alias tpp="cd ~/code/portal"
-alias tpup="sqlstart && tpp && tpserve"
+# WSL2 / Linux
+# alias tpup="sqlstart && tpp && tpserve"
+# MacOS
+alias tpup="tpp && tpserve"
 alias tpserve="php artisan serve --host=trialpartners.local --port=8080 --env=.env"
-
-# PSI
-alias psi="cd ~/code/psi"
-alias psife="psi && cd psi-frontend"
-alias psibe="psi && cd psi-backend"
 
 # Win/Linux
 alias psife-up="psife && nvm use 16.13 && is"
