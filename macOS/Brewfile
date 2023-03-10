@@ -1,0 +1,80 @@
+# Taps
+tap "qmk/qmk"
+
+# Brews
+brew "composer"
+
+brew "git"
+
+brew "mysql"
+
+brew "nvm"
+
+brew "php"
+
+brew "phpunit"
+
+# brew "qmk/qmk/qmk"
+
+brew "redis"
+
+# Casks
+cask "anki"
+
+cask "audio-hijack"
+
+cask "bitwarden"
+
+cask "brave-browser"
+
+cask "dbeaver-community"
+
+cask "discord"
+
+cask "docker"
+
+cask "eloston-chromium"
+
+cask "fantastical"
+
+cask "firefox"
+
+cask "google-chrome"
+
+cask "iterm2"
+
+cask "keepassxc"
+
+cask "librewolf"
+
+cask "loopback"
+
+# cask "nordvpn"
+
+cask "numi"
+
+cask "obs"
+
+cask "obsidian"
+
+cask "omnifocus"
+
+cask "phpstorm"
+
+cask "postman"
+
+cask "prusaslicer"
+
+cask "rectangle"
+
+cask "spotify"
+
+cask "stats"
+
+cask "steam"
+
+cask "tableplus"
+
+cask "via"
+
+cask "visual-studio-code"
