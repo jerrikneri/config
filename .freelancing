@@ -6,7 +6,7 @@ alias tpp="cd ~/code/portal"
 # WSL2 / Linux
 # alias tpup="sqlstart && tpp && tpserve"
 # MacOS
-alias tpup="tpp && tpserve"
+alias tpup="tpp && sqlstart && tpserve"
 alias tpserve="php artisan serve --host=trialpartners.local --port=8080 --env=.env"
 
 # Win/Linux
@@ -14,6 +14,8 @@ alias psife-up="psife && nvm use 16.13 && is"
 alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"
 
 # Mac
+alias sqlstart="brew services start mysql"
+alias sqlstop="brew services stop mysql"
 #TODO: Figure out how to handle overrides gracefully.
 # alias psibe-up="psibe && sqlstart && psiserve"
 # alias psiserve="php artisan serve --host=psi.local --port=8000 --env=.env"

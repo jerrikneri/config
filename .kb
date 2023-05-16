@@ -1,6 +1,7 @@
 #Keyboard
 
 alias cqmk="cd ~/Keyboard/QMK && gco jerrik"
+alias czmk="cd ~/Keyboard/zmk"
 alias kqmk="cd ~/Keyboard/keychron && gco bluetooth_playground"
 
 alias clone-k-qmk="cd ~/Keyboard && git clone https://github.com/Keychron/qmk_firmware.git keychron"
