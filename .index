@@ -10,4 +10,5 @@ source ~/Config/.kb
 source ~/Config/.popos
 source ~/Config/.proxmox
 source ~/Config/.sandbox
+source ~/Config/.ssh
 # source ~/Config/.wsl
