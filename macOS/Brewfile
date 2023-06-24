@@ -73,6 +73,10 @@ cask "steam"
 
 cask "tableplus"
 
+cask "utm"
+
 cask "via"
+
+# cask "virtualbox"
 
 cask "visual-studio-code"
