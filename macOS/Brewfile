@@ -35,29 +35,27 @@ cask "docker"
 
 cask "eloston-chromium"
 
-cask "fantastical"
-
 cask "firefox"
 
 cask "google-chrome"
+
+# cask "insomnia"
 
 cask "iterm2"
 
 cask "keepassxc"
 
-cask "librewolf"
+# cask "librewolf" --no-quarantine
 
 cask "loopback"
 
-# cask "nordvpn"
+cask "nordvpn"
 
 cask "numi"
 
 cask "obs"
 
 cask "obsidian"
-
-cask "omnifocus"
 
 cask "phpstorm"
 
