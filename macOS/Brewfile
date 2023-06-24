@@ -33,7 +33,7 @@ cask "discord"
 
 cask "docker"
 
-cask "eloston-chromium"
+# cask "eloston-chromium"
 
 cask "firefox"
 
