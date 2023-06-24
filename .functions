@@ -62,3 +62,14 @@ pu() {
     phpunit --filter $1
   fi
 }
+
+# Processes
+
+kp() {
+  if [ -z "$1" ]
+  then
+    echo "Process name required."
+  else
+    kill -9 `ps | grep $1 | awk '{print $1}'`
+  fi
+}

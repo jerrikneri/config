@@ -7,6 +7,7 @@ alias tpp="cd ~/code/portal"
 # alias tpup="sqlstart && tpp && tpserve"
 # MacOS
 alias tpup="tpp && sqlstart && tpserve"
+alias tpdn="kp trialpartner; sqlstop"
 alias tpserve="php artisan serve --host=trialpartners.local --port=8080 --env=.env"
 
 # Win/Linux
