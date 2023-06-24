@@ -70,6 +70,6 @@ kp() {
   then
     echo "Process name required."
   else
-    kill -9 `ps | grep $1 | awk '{print $1}'`
+    kill -9 `ps aux | grep $1 | awk '{print $1}'`
   fi
 }
