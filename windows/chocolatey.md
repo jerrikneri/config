@@ -1,0 +1,15 @@
+Chocolatey v2.2.2
+bitwarden 2023.9.3
+chocolatey 2.2.2
+chocolatey-compatibility.extension 1.0.0
+chocolatey-core.extension 1.4.0
+docker 99.0.0
+docker-cli 24.0.6
+GoogleChrome 118.0.5993.89
+phpstorm 2023.2.3
+postman 10.18.10
+steam 2.10.91.91221129
+TablePlus 5.4.3
+visualstudiocode 1.23.1.20180730
+vscode 1.83.1
+vscode.install 1.83.1
