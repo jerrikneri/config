@@ -15,8 +15,8 @@ alias psife-up="psife && nvm use 16.13 && is"
 alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8000 --env=.env"
 
 # Mac
-alias sqlstart="brew services start mysql"
-alias sqlstop="brew services stop mysql"
+# alias sqlstart="brew services start mysql"
+# alias sqlstop="brew services stop mysql"
 #TODO: Figure out how to handle overrides gracefully.
 # alias psibe-up="psibe && sqlstart && psiserve"
 # alias psiserve="php artisan serve --host=psi.local --port=8000 --env=.env"
