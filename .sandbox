@@ -1,6 +1,6 @@
 # Jeopardy
 alias sb-j="cd ~/code/sandbox/jeopardy"
-alias sb-j-fe="sb-j && cd frontend && is"
+alias sb-j-fe="sb-j && cd frontend && nvm use 16 && is"
 alias sb-j-api="sb-j && cd api && DEBUG=myapp:* npm start"
 alias jeopardy="sb-j && npm run serve"
 
