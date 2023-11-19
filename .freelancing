@@ -6,6 +6,8 @@ alias tpp="cd ~/code/portal"
 # WSL2 / Linux
 # alias tpup="sqlstart && tpp && tpserve"
 # MacOS
+
+# TODO: turn into function with flags to use brew / takeout / valet / etc.
 alias tpup="tpp && sqlstart && tpserve"
 alias tpdn="kp trialpartner; sqlstop; valet stop"
 # Php Serve
