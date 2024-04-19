@@ -8,12 +8,16 @@ alias tpp="cd ~/code/portal"
 # MacOS
 
 # TODO: turn into function with flags to use brew / takeout / valet / etc.
-alias tpup="tpp && sqlstart && tpserve"
-alias tpdn="kp trialpartner; sqlstop; valet stop"
+# alias tpup="tpp && sqlstart && tpserve"
+alias tpup="tpp && dockerstart && tpserve"
+alias tpdn="tpp && ./vendor/bin/sail down && dockerstop"
+# alias tpdn="kp trialpartner; sqlstop; valet stop; valet stop dnsmasq"
 # Php Serve
 # alias tpserve="php artisan serve --host=trialpartners.local --port=8080 --env=.env"
 # Valet
-alias tpserve="valet start"
+# alias tpserve="valet start"
+
+alias tpserve="./vendor/bin/sail up"
 
 # Win/Linux
 alias psife-up="psife && nvm use 16.13 && is"
@@ -23,6 +27,9 @@ alias psibe-up="psibe && sqlstart && php artisan serve --host=psi.local --port=8
 # Brew
 # alias sqlstart="brew services start mysql"
 # alias sqlstop="brew services stop mysql"
+
+alias dockerstart="open --background -a Docker; sleep 1"
+alias dockerstop="killall Docker"
 
 # Takeout
 alias sqlstart="open --background -a Docker; sleep 1; takeout start --all"
