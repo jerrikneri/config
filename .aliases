@@ -31,6 +31,7 @@ alias jserve="bundle exec jekyll serve"
 alias c="cd ~/code"
 alias la="ls -al"
 alias cfg="cd ~/Config"
+alias obs="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/jaewrek"
 
 #Config
 alias refrash="zsrc"

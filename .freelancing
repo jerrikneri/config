@@ -1,6 +1,8 @@
 # PHP
 alias 74ci="/usr/bin/php7.4 /usr/local/bin/composer install"
 
+alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
+
 # TP
 alias tpp="cd ~/code/portal"
 # WSL2 / Linux
@@ -10,14 +12,14 @@ alias tpp="cd ~/code/portal"
 # TODO: turn into function with flags to use brew / takeout / valet / etc.
 # alias tpup="tpp && sqlstart && tpserve"
 alias tpup="tpp && dockerstart && tpserve"
-alias tpdn="tpp && ./vendor/bin/sail down && dockerstop"
+alias tpdn="tpp && sail down && dockerstop"
 # alias tpdn="kp trialpartner; sqlstop; valet stop; valet stop dnsmasq"
 # Php Serve
 # alias tpserve="php artisan serve --host=trialpartners.local --port=8080 --env=.env"
 # Valet
 # alias tpserve="valet start"
 
-alias tpserve="./vendor/bin/sail up"
+alias tpserve="sail up"
 
 # Win/Linux
 alias psife-up="psife && nvm use 16.13 && is"
