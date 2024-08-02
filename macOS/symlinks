@@ -1,0 +1,7 @@
+  ln -s ~/Config/alacritty ~/.config
+  ln -s ~/Config/sketchybar ~/.config
+  ln -s ~/Config/tmux ~/.config
+  ln -s ~/Config/skhd ~/.config
+  ln -s ~/Config/yabai ~/.config
+  ln -s ~/Config/zsh/.zshrc ~/.config/zsh
+  # history | grep -i "ln -s ~"
