@@ -6,11 +6,17 @@ brew "composer"
 
 brew "git"
 
+brew "mycli"
+
 brew "mysql"
+
+brew "neovim"
 
 brew "nvm"
 
 brew "php"
+
+brew "pgcli"
 
 # brew "phpunit"
 
@@ -18,12 +24,28 @@ brew "php"
 
 brew "redis"
 
+brew "ripgrep"
+
+brew "sketchybar"
+
+brew "skhd"
+
+brew "tmux"
+
+brew "yabai"
+
 # Casks
+cask "alacritty"
+
 cask "anki"
 
 cask "audio-hijack"
 
+cask "balenaetcher"
+
 cask "bitwarden"
+
+cask "blockblock"
 
 cask "brave-browser"
 
@@ -33,29 +55,31 @@ cask "discord"
 
 cask "docker"
 
-# cask "eloston-chromium"
-
 cask "firefox"
 
 cask "google-chrome"
 
-# cask "insomnia"
-
-cask "iterm2"
+cask "karabiner-elements"
 
 cask "keepassxc"
+
+cask "knockknock"
 
 # cask "librewolf" --no-quarantine
 
 cask "loopback"
 
-cask "nordvpn"
+cask "lulu"
+
+cask "medis"
+
+cask "netiquette"
 
 cask "numi"
 
-cask "obs"
-
 cask "obsidian"
+
+cask "oversight"
 
 cask "phpstorm"
 
@@ -63,20 +87,30 @@ cask "postman"
 
 cask "prusaslicer"
 
+cask "ransomwhere"
+
 cask "rectangle"
+
+cask "reikey"
+
+cask "slack"
 
 cask "spotify"
 
-cask "stats"
-
 cask "steam"
 
+cask "superduper"
+
 cask "tableplus"
+
+cask "taskexplorer"
 
 cask "utm"
 
 cask "via"
 
-# cask "virtualbox"
-
 cask "visual-studio-code"
+
+cask "whatsapp"
+
+cask "yubico-yubikey-manager"
