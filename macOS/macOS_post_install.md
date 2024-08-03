@@ -3,11 +3,10 @@
 ### Initial Setup
 
 - Define `.zshenv`
-  - ```export XDG_CONFIG_HOME="$HOME/.config"
-
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"```
-
-➜
+  ```
+  export XDG_CONFIG_HOME="$HOME/.config"
+  export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
+  ```
 
 - oh-my-zsh
 `sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
@@ -15,7 +14,7 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"```
 - Homebrew
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"`
   - add to path
-    - `echo 'export PATH=/opt/homebrew/bin:$PATH' >> $HOME/.zshrc && echo 'export PATH=/opt/homebrew/sbin:$PATH' >> $HOME/.zshrc && source $HOME/.zshrc`
+    - `echo 'export PATH=/opt/homebrew/bin:$PATH' >> $ZDOTDIR/.zshrc && echo 'export PATH=/opt/homebrew/sbin:$PATH' >> $ZDOTDIR/.zshrc && source $ZDOTDIR/.zshrc`
 
 ---
 
@@ -37,9 +36,11 @@ export ZDOTDIR="$XDG_CONFIG_HOME/zsh"```
 
 `git clone git@github.com:jerrikneri/config.git Config`
 
-`echo "source ~/Config/.index" >> .zshrc`
+`echo "source ~/Config/.index" >> $ZDOTDIR/.zshrc`
 
-`source ~/.zshrc`
+`source $ZDOTDIR/.zshrc`
+
+TODO: figure out how to automate ln -s symlinks
 
 ---
 
