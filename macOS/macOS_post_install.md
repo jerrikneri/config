@@ -3,6 +3,7 @@
 ### Initial Setup
 
 - Define `.zshenv`
+
   ```
   export XDG_CONFIG_HOME="$HOME/.config"
   export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
@@ -30,6 +31,15 @@
 
 `ssh-add ~/.ssh/id_ed25519`
 
+Add to `~/.ssh/config`
+
+```
+Host $SSH_HOSTNAME
+  AddKeysToAgent yes
+  UseKeychain yes
+  IdentityFile ~/.ssh/$SSH_PUB_KEY_FILE
+```
+
 ---
 
 ## Config
@@ -52,4 +62,3 @@ NVM
 `nvm alias default node`
 
 ---
-
