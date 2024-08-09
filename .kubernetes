@@ -1,0 +1,5 @@
+alias k8s-c="ssh $K8S_HOST@$K8S_CTLR_IP"
+alias k8s-1="ssh $K8S_HOST@$K8S_NODE_1_IP"
+alias k8s-2="ssh $K8S_HOST@$K8S_NODE_2_IP"
+alias k8s-3="ssh $K8S_HOST@$K8S_NODE_3_IP"
+

@@ -12,3 +12,5 @@ source ~/Config/.proxmox
 source ~/Config/.sandbox
 source ~/Config/.ssh
 # source ~/Config/.wsl
+
+source ~/Config/.kubernetes
