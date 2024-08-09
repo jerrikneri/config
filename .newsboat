@@ -1,0 +1,10 @@
+nbsave() {
+  if [ -z "$1" ]
+  then
+    echo "URL required to save to newsboat."
+  else
+    echo $1 >> ~/.newsboat/urls
+    echo "$1 saved to newsboats urls file."
+  fi
+}
+
