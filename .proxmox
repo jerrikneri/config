@@ -1,5 +1,5 @@
 # AMD PVE
-alias pssh="ssh root@$PROXMOX_IP"
+alias pssh="ssh $PROXMOX_HOST@$PROXMOX_IP"
 
 #alias pveup="wakeonlan -i 192.168.1.255 -p 7 $PROXMOX_MA"
 alias pveup="wakeonlan $PROXMOX_MA"
