@@ -1,14 +1,15 @@
 DOT_FILES_DIR=$(pwd)
 
+# Environment Variables
 source $DOT_FILES_DIR/.env
 source $DOT_FILES_DIR/.env.pub
 
-source $DOT_FILES_DIR/.
+# Aliases & Functions
 source $DOT_FILES_DIR/.aliases
 source $DOT_FILES_DIR/.functions
 source $DOT_FILES_DIR/.format
 
-
+# Tooling
 source $DOT_FILES_DIR/.fp
 source $DOT_FILES_DIR/.freelancing
 source $DOT_FILES_DIR/.homelab
