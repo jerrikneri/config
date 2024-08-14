@@ -40,7 +40,7 @@ alias nv="nvim"
 alias t="tmux"
 
 #Config
-alias refrash="zsrc"
+alias refrash="cfg && zsrc && cd -"
 #alias zsrc="source ~/.zshrc"
 alias zsrc="source $ZDOTDIR/.zshrc"
 alias vsrc="cp ~/Config/.vimrc ~/.vimrc"
