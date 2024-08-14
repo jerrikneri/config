@@ -29,15 +29,15 @@
 
 `eval "$(ssh-agent -s)"`
 
-`ssh-add ~/.ssh/id_ed25519`
+`ssh-add $HOME/.ssh/id_ed25519`
 
-Add to `~/.ssh/config`
+Add to `$HOME/.ssh/config`
 
 ```
 Host $SSH_HOSTNAME
   AddKeysToAgent yes
   UseKeychain yes
-  IdentityFile ~/.ssh/$SSH_PUB_KEY_FILE
+  IdentityFile $HOME/.ssh/$SSH_PUB_KEY_FILE
 ```
 
 ---

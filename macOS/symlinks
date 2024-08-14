@@ -1,7 +1,7 @@
-  ln -s $DOT_FILES_DIR/alacritty ~/.config
-  ln -s $DOT_FILES_DIR/sketchybar ~/.config
-  ln -s $DOT_FILES_DIR/tmux ~/.config
-  ln -s $DOT_FILES_DIR/skhd ~/.config
-  ln -s $DOT_FILES_DIR/yabai ~/.config
-  ln -s $DOT_FILES_DIR/zsh/.zshrc ~/.config/zsh
-  # history | grep -i "ln -s ~"
+  ln -s $DOT_FILES_DIR/alacritty $HOME/.config
+  ln -s $DOT_FILES_DIR/sketchybar $HOME/.config
+  ln -s $DOT_FILES_DIR/tmux $HOME/.config
+  ln -s $DOT_FILES_DIR/skhd $HOME/.config
+  ln -s $DOT_FILES_DIR/yabai $HOME/.config
+  ln -s $DOT_FILES_DIR/zsh/.zshrc $HOME/.config/zsh
+  # history | grep -i "ln -s $HOME"

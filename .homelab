@@ -1,1 +1,1 @@
-alias hl="~/code/homelab"
+alias hl="cd $LAB"
