@@ -3,6 +3,7 @@
   ln -s $DOTFILES/alacritty $HOME/.config
   ln -s $DOTFILES/karabiner $HOME/.config
   ln -s $DOTFILES/newsboat $HOME/.config
+  ln -s $DOTFILES/nvim $HOME/.config
   ln -s $DOTFILES/sketchybar $HOME/.config
   ln -s $DOTFILES/tmux $HOME/.config
   ln -s $DOTFILES/skhd $HOME/.config
