@@ -1,24 +1,24 @@
-DOT_FILES_DIR=$(pwd)
+DOTFILES=$HOME/code/dotfiles
 
 # Environment Variables
-source $DOT_FILES_DIR/.env
-source $DOT_FILES_DIR/.env.pub
+source $DOTFILES/.env
+source $DOTFILES/.env.pub
 
 # Aliases & Functions
-source $DOT_FILES_DIR/.aliases
-source $DOT_FILES_DIR/.functions
-source $DOT_FILES_DIR/.format
+source $DOTFILES/.aliases
+source $DOTFILES/.functions
+source $DOTFILES/.format
 
 # Tooling
-source $DOT_FILES_DIR/.fp
-source $DOT_FILES_DIR/.freelancing
-source $DOT_FILES_DIR/.homelab
-source $DOT_FILES_DIR/.kb
-source $DOT_FILES_DIR/.newsboat
-# source $DOT_FILES_DIR/.popos
-source $DOT_FILES_DIR/.proxmox
-source $DOT_FILES_DIR/.sandbox
-source $DOT_FILES_DIR/.ssh
-# source $DOT_FILES_DIR/.wsl
+source $DOTFILES/.fp
+source $DOTFILES/.freelancing
+source $DOTFILES/.homelab
+source $DOTFILES/.kb
+source $DOTFILES/.newsboat
+# source $DOTFILES/.popos
+source $DOTFILES/.proxmox
+source $DOTFILES/.sandbox
+source $DOTFILES/.ssh
+# source $DOTFILES/.wsl
 
-source $DOT_FILES_DIR/.kubernetes
+source $DOTFILES/.kubernetes

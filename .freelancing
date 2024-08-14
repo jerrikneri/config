@@ -4,7 +4,7 @@ alias 74ci="/usr/bin/php7.4 /usr/local/bin/composer install"
 alias sail='sh $([ -f sail ] && echo sail || echo vendor/bin/sail)'
 
 # TP
-alias tpp="cd ~/code/portal"
+alias tpp="cd $REPOS/trialpartners/portal"
 # WSL2 / Linux
 # alias tpup="sqlstart && tpp && tpserve"
 # MacOS
@@ -42,6 +42,6 @@ alias sqlstop="takeout stop --all; killall Docker"
 # alias psiserve="php artisan serve --host=psi.local --port=8000 --env=.env"
 
 # WMS
-alias wms="cd ~/code/wms/cannonwms"
+alias wms="cd $REPOS/wms/cannonwms"
 alias wmsup="wms && /usr/bin/php7.4 -S localhost:9000 -t public/"
 

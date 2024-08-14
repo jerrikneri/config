@@ -2,7 +2,6 @@
 alias stress="yes > /dev/null & yes > /dev/null & yes > /dev/null & yes > /dev/null &"
 alias stop="killall yes"
 
-
 #Git
 alias gs="git status"
 alias gl="git log"
@@ -29,11 +28,11 @@ alias tw="js test:watch"
 alias jserve="bundle exec jekyll serve"
 
 #Directories
-alias c="cd ~/code"
+alias c="cd $HOME/code"
 alias la="ls -al"
-alias cfg="cd $DOT_FILES_DIR"
-alias sb="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/sb"
-alias write="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/writing/writing"
+alias cfg="cd $DOTFILES"
+alias sb="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/sb"
+alias write="cd $HOME/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/writing/writing"
 
 # CLI Tools
 alias nv="nvim"
@@ -41,12 +40,9 @@ alias t="tmux"
 
 #Config
 alias refrash="cfg && zsrc && cd -"
-#alias zsrc="source ~/.zshrc"
 alias zsrc="source $ZDOTDIR/.zshrc"
 alias vsrc="cp ~/Config/.vimrc ~/.vimrc"
-alias cfg="cd ~/Config"
-alias zfg="vim ~/.zshrc"
-alias vfg="vim ~/Config/.vimrc"
+alias zfg="vim $ZDOTDIR/.zshrc"
 
 #SSH
 alias sshme="ssh $JAN"
@@ -72,6 +68,8 @@ alias docker-format="docker ps --format $FORMAT"
 alias supervisor-path="~/code/supervisor/supervisord.conf"
 alias svd="supervisord -c /usr/local/etc/supervisor.d/supervisord.conf"
 alias svc="supervisorctl -c /usr/local/etc/supervisor.d/supervisord.conf"
+
+alias start-services="yabai --start-service && skhd --start-service"
 
 
 #Home Server
