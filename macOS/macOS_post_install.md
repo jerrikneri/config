@@ -46,7 +46,7 @@ Host $SSH_HOSTNAME
 
 `git clone git@github.com:jerrikneri/config.git Config`
 
-`echo "source ~/Config/.index" >> $ZDOTDIR/.zshrc`
+`echo "source $DOT_FILES_DIR/.index" >> $ZDOTDIR/.zshrc`
 
 `source $ZDOTDIR/.zshrc`
 

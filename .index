@@ -1,17 +1,23 @@
-source ~/Config/.env
-source ~/Config/.aliases
-source ~/Config/.functions
-source ~/Config/.format
+DOT_FILES_DIR=$(pwd)
+
+source $DOT_FILES_DIR/.env
+source $DOT_FILES_DIR/.env.pub
+
+source $DOT_FILES_DIR/.
+source $DOT_FILES_DIR/.aliases
+source $DOT_FILES_DIR/.functions
+source $DOT_FILES_DIR/.format
 
 
-source ~/Config/.fp
-source ~/Config/.freelancing
-source ~/Config/.kb
-source ~/Config/.newsboat
-# source ~/Config/.popos
-source ~/Config/.proxmox
-source ~/Config/.sandbox
-source ~/Config/.ssh
-# source ~/Config/.wsl
+source $DOT_FILES_DIR/.fp
+source $DOT_FILES_DIR/.freelancing
+source $DOT_FILES_DIR/.homelab
+source $DOT_FILES_DIR/.kb
+source $DOT_FILES_DIR/.newsboat
+# source $DOT_FILES_DIR/.popos
+source $DOT_FILES_DIR/.proxmox
+source $DOT_FILES_DIR/.sandbox
+source $DOT_FILES_DIR/.ssh
+# source $DOT_FILES_DIR/.wsl
 
-source ~/Config/.kubernetes
+source $DOT_FILES_DIR/.kubernetes

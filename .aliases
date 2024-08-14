@@ -31,7 +31,7 @@ alias jserve="bundle exec jekyll serve"
 #Directories
 alias c="cd ~/code"
 alias la="ls -al"
-alias cfg="cd ~/Config"
+alias cfg="cd $DOT_FILES_DIR"
 alias sb="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/sb"
 alias write="cd ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/writing/writing"
 
