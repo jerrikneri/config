@@ -22,7 +22,8 @@ sudo systemctl enable qemu-guest-agent
 (echo; echo 'eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"') >> /home/kgh/.bashrc
 eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
-brew install helm neovim ripgrep k9s newsboat
+# TODO: get this from ./Brewfile
+brew install helm neovim ripgrep k9s newsboat argocd
 
 # LazyVim 
 ~/.config/nvim{,.bak}
