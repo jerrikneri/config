@@ -1,7 +1,7 @@
 {
   "extras": [
     "lazyvim.plugins.extras.lang.markdown",
-    "lazyvim.plugins.extras.vscode"
+    "lazyvim.plugins.extras.util.gitui"
   ],
   "news": {
     "NEWS.md": "6520"
