@@ -1,5 +1,18 @@
+sudo apt install vim git
+
 ssh-keygen -t ed25519
 eval "$(ssh-agent -s)"
+
+vim ~/.ssh/config
+
+```
+Host github.com
+  IdentityFile ~/.ssh/id_ed25519
+```
+
+ssh-add
+
+# Add SSH key to Github Account
 
 
 cd && mkdir code && cd code && git clone git@github.com:jerrikneri/dotfiles.git && cd dotfiles/ && cp .env.example .env
