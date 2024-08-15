@@ -1,28 +1,21 @@
 # Update
 sudo apt-get update && sudo apt-get upgrade
 
+# Apt packages
+sudo apt update
+sudo apt install build-essential
+
+sudo apt install kubectl
+sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
+
 # Proxmox / Qemu Guest Agent
 sudo apt install qemu-guest-agent
 sudo systemctl start qemu-guest-agent
 sudo systemctl enable qemu-guest-agent
 
-ssh-keygen -t ed25519
-eval "$(ssh-agent -s)"
-
-sudo apt install vim git
-
-cd && mkdir code && cd code && git clone git@github.com:jerrikneri/dotfiles.git && cd dotfiles/ && cp .env.example .env
-
-echo "source ~/code/dotfiles/.index" >> ~/.bashrc
-source ~/.bashrc
-
-cd ~/code && git clone git@github.com:jerrikneri/homelab.git
-
-sudo apt install kubectl
-sudo install -o root -g root -m 0755 kubectl /usr/local/bin/kubectl
-
 # Linux Homebrew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# Missing add to path step
 brew install helm neovim ripgrep k9s newsboat
 
 # LazyVim 
