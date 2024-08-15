@@ -8,7 +8,7 @@ alias pveup="wakeonlan $PROXMOX_MA"
 alias mmpve="ssh $MM_PVE_HOST@$MM_PVE_IP"
 
 # Ubuntu Server
-alias pve-ubuntu="ssh $K8S_HOST@PVE_UBUNTU_IP"
+alias pve-ubuntu="ssh $K8S_HOST@$PVE_UBUNTU_IP"
 
 # K8S
 alias k8s-c="ssh $K8S_HOST@$K8S_CTLR_IP"
