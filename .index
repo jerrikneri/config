@@ -1,7 +1,7 @@
 # Attempt to get current DIR
 #DOTFILES_ENTRY="$(dirname "${(%):-%N}")"
-#DOTFILES_ENTRY=$HOME/code/dotfiles
-DOTFILES_ENTRY=.
+DOTFILES_ENTRY=$HOME/code/dotfiles
+#DOTFILES_ENTRY=.
 
 # Environment Variables
 source $DOTFILES_ENTRY/.env
