@@ -1,11 +1,12 @@
 #!/bin/bash
 
-  ln -s $DOTFILES/alacritty $HOME/.config
-  ln -s $DOTFILES/karabiner $HOME/.config
-  ln -s $DOTFILES/newsboat $HOME/.config
-  ln -s $DOTFILES/nvim $HOME/.config
-  ln -s $DOTFILES/sketchybar $HOME/.config
-  ln -s $DOTFILES/tmux $HOME/.config
-  ln -s $DOTFILES/skhd $HOME/.config
-  ln -s $DOTFILES/yabai $HOME/.config
-  ln -s $DOTFILES/zsh/.zshrc $HOME/.config/zsh
+ln -s $DOTFILES_CONFIG/alacritty $HOME/.config
+ln -s $DOTFILES_CONFIG/karabiner $HOME/.config
+ln -s $DOTFILES_CONFIG/newsboat $HOME/.config
+ln -s $DOTFILES_CONFIG/nvim $HOME/.config
+ln -s $DOTFILES_CONFIG/sketchybar $HOME/.config
+ln -s $DOTFILES_CONFIG/tmux $HOME/.config
+ln -s $DOTFILES_CONFIG/skhd $HOME/.config
+ln -s $DOTFILES_CONFIG/yabai $HOME/.config
+ln -s $DOTFILES_CONFIG/zsh/.zshrc $HOME/.config/zsh
+

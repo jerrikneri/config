@@ -3,5 +3,6 @@
 ## Setup
 
 1. Clone repo to directory of your choice.
-2. Add `source $DOT_FILES_DIR/.index` to profile.
-3. Source your original profile.
+2. Add `source path/to/this/repo/.index` to profile.
+3. `cp .env.example .env`
+4. Source your original profile.

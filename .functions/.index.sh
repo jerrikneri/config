@@ -1,8 +1,3 @@
-#Directories
-sl() {
-	cd ~/code/sendlane/$1
-}
-
 #Docker
 dit() {
   docker exec -it $1 bash
@@ -71,5 +66,15 @@ kp() {
     echo "Process name required."
   else
     kill -9 `ps aux | grep $1 | awk '{print $2}'`
+  fi
+}
+
+nbsave() {
+  if [ -z "$1" ]
+  then
+    echo "URL required to save to newsboat."
+  else
+    echo $1 >> $DOTFILES_CONFIG/.newsboat/urls
+    echo "$1 saved to newsboats urls file."
   fi
 }

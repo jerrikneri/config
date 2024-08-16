@@ -1,5 +1,5 @@
 .env
 
-tmux/plugins/
+.config/tmux/plugins/
 
 ./macOS/Brewfile.lock.json

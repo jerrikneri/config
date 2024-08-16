@@ -1,24 +1,13 @@
-DOTFILES=$HOME/code/dotfiles
+# Attempt to get current DIR
+DOTFILES_ENTRY="$(dirname "${(%):-%N}")"
+#DOTFILES_ENTRY=$HOME/code/dotfiles
 
 # Environment Variables
-source $DOTFILES/.env
-source $DOTFILES/.env.pub
+source $DOTFILES_ENTRY/.env
+source $DOTFILES_ENTRY/.env.pub
 
-# Aliases & Functions
-source $DOTFILES/.aliases
-source $DOTFILES/.functions
-source $DOTFILES/.format
-
-# Tooling
-source $DOTFILES/.fp
-source $DOTFILES/.freelancing
-source $DOTFILES/.homelab
-source $DOTFILES/.kb
-source $DOTFILES/.newsboat
-# source $DOTFILES/.popos
-source $DOTFILES/.proxmox
-source $DOTFILES/.sandbox
-source $DOTFILES/.ssh
-# source $DOTFILES/.wsl
-
-source $DOTFILES/.kubernetes
+for dir in $ALIASES $FUNCTIONS $MODULES; do
+    for file in "$dir"/.*.sh; do
+        [ -f "$file" ] && source "$file"
+    done
+done

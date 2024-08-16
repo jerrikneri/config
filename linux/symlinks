@@ -1,0 +1,7 @@
+#!/bin/bash
+
+ln -s $DOTFILES_CONFIG/newsboat $HOME/.config
+ln -s $DOTFILES_CONFIG/nvim $HOME/.config
+#ln -s $DOTFILES_CONFIG/tmux $HOME/.config
+#ln -s $DOTFILES_CONFIG/zsh/.zshrc $HOME/.config/zsh
+
