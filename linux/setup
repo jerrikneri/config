@@ -26,9 +26,9 @@ eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 brew install helm neovim ripgrep k9s newsboat argocd
 
 # LazyVim 
-~/.config/nvim{,.bak}
-git clone https://github.com/LazyVim/starter ~/.config/nvim
-rm -rf ~/.config/nvim/.git
+$HOME/.config/nvim{,.bak}
+git clone https://github.com/LazyVim/starter $HOME/.config/nvim
+rm -rf $HOME/.config/nvim/.git
 
 # Start up nvim with alias
 nv

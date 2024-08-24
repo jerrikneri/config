@@ -1,1 +1,1 @@
-cat ~/.kube/config | ssh "$PROXMOX_HOST@$PVE_UBUNTU_IP" "cat > .kube/config"
+cat $HOME/.kube/config | ssh "$PROXMOX_HOST@$PVE_UBUNTU_IP" "cat > .kube/config"
