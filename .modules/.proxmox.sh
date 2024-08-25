@@ -69,4 +69,4 @@ pve() {
   esac
 }
 
-#alias remote-wakeonlan="pve"
+alias remote-wakeonlan="ssh $MM_PVE_HOST@$PVE_UBUNTU_JUMP_IP \"wakeonlan $PROXMOX_MA\""
