@@ -1,0 +1,10 @@
+alias d='dirs -v'
+for index ({1..9}) alias "$index"="cd +${index}"; unset index
+
+
+alias la='ls -lah'
+alias ga='git add'
+alias gc='git commit -m'
+alias gd='git diff'
+alias gp='git push'
+alias gs='git status'
