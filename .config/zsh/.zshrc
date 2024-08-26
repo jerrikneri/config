@@ -103,6 +103,10 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# Enable vi mode
+bindkey -v
+export EDITOR='nvim'
+
 source $HOME/code/dotfiles/.index
 
 export PATH=$PATH:/opt/homebrew/bin
