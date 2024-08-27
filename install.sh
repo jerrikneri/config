@@ -1,7 +1,11 @@
 #!/bin/bash
 
-# Source base environment variables for establishing directorie
+# Source base environment variables for establishing directories
 source .config/zsh/.zshenv
+
+# Clean up existing config
+rm $HOME/.zshenv
+rm $ZDOTDIR/.zshrc
 
 # Set .zshenv in ~
 cp .config/zsh/.zshenv $HOME
@@ -15,7 +19,7 @@ else
     echo ".env file already exists"
 fi
 
-# Environment Variables
+# Private Environment Variables
 source $DOTFILES/.env
 
 # defined in .config/zsh/.zshenv
@@ -25,4 +29,5 @@ for dir in $ALIASES $FUNCTIONS $MODULES; do
     done
 done
 
+# run install_arch.sh | install_macOS.sh | install_ubuntu.sh
 ./detect-os.sh
