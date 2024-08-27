@@ -1,12 +1,16 @@
-source .config/zsh/.zshenv
+ln -sf $DOTFILES_CONFIG/zsh/.zshenv $HOME/.zshenv
 
-cp .config/zsh/.zshenv $HOME
+ln -sf $DOTFILES_CONFIG/alacritty $HOME/.config
+ln -sf $DOTFILES_CONFIG/karabiner $HOME/.config
+ln -sf $DOTFILES_CONFIG/newsboat $HOME/.config
+ln -sf $DOTFILES_CONFIG/nvim $HOME/.config
+ln -sf $DOTFILES_CONFIG/sketchybar $HOME/.config
+ln -sf $DOTFILES_CONFIG/tmux $HOME/.config
+ln -sf $DOTFILES_CONFIG/skhd $HOME/.config
+ln -sf $DOTFILES_CONFIG/yabai $HOME/.config
+ln -sf $DOTFILES_CONFIG/zsh/.zshrc $HOME/.config/zsh/.zshrc
 
-# Environment Variables
-source $DOTFILES/.env
+rm -rf "$XDG_CONFIG_HOME/zsh/external"
+ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
 
-for dir in $ALIASES $FUNCTIONS $MODULES; do
-    for file in "$dir"/.*.sh; do
-        [ -f "$file" ] && source "$file"
-    done
-done
+echo 'MacOS set up complete!'

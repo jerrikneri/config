@@ -1,8 +1,14 @@
-echo 'Begin .zshrc'
-
 fpath=($ZDOTDIR/external $fpath)
 
-source "$XDG_CONFIG_HOME/zsh/aliases"
+# history setup
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
+
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
 
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
@@ -12,7 +18,7 @@ bindkey -M menuselect 'j' vi-down-line-or-history
 
 autoload -Uz compinit; compinit
 _comp_options+=(globdots) # With hidden files
-source ~/dotfiles/zsh/external/completion.zsh
+source $DOTFILES_CONFIG/zsh/external/completion.zsh
 
 autoload -Uz prompt_purification_setup && prompt_purification_setup
 
@@ -32,7 +38,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-#source ~/dotfiles/zsh/external/bd.zsh
+#source $DOTFILES_CONFIG/zsh/external/bd.zsh
 
 if [ $(command -v "fzf") ]; then
 #    source /usr/share/fzf/completion.zsh
@@ -44,16 +50,13 @@ then
 #    pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
 fi
 
-#source $DOTFILES/zsh/scripts.sh
+#source $DOTFILES_CONFIG/scripts.sh
 
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-#source $HOME/code/dotfiles/.index
 if [ -f $SCRIPTS/import_aliases_functions_modules.sh ]; then
     echo 'Sourcing from .zshrc'
     source $SCRIPTS/import_aliases_functions_modules.sh
 fi
 
 export PATH=$PATH:/opt/homebrew/bin
-
-echo 'End .zshrc'
