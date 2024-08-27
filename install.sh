@@ -23,7 +23,8 @@ fi
 # Private Environment Variables
 source $DOTFILES/.env
 
-$SCRIPTS/import_aliases_functions_modules.sh
+# Do this .zshrc instead?
+# $SCRIPTS/import_aliases_functions_modules.sh
 
 # run install_arch.sh | install_macOS.sh | install_ubuntu.sh
 $SCRIPTS/detect_os.sh

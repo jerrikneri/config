@@ -46,6 +46,9 @@ fi
 
 #source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
-source $HOME/code/dotfiles/.index
+#source $HOME/code/dotfiles/.index
+if [ -f $SCRIPTS/import_aliases_functions_modules.sh ]; then
+    source $SCRIPTS/import_aliases_functions_modules.sh
+fi
 
 export PATH=$PATH:/opt/homebrew/bin
