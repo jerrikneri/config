@@ -4,9 +4,9 @@
 source .config/zsh/.zshenv
 
 # Clean up existing config
-rm $HOME/.zshenv
-rm $ZDOTDIR/.zshrc
-rm $ZDOTDIR/aliases
+rm -f $HOME/.zshenv
+rm -f $ZDOTDIR/.zshrc
+rm -f $ZDOTDIR/aliases
 
 # Set .zshenv in ~
 #cp .config/zsh/.zshenv $HOME
