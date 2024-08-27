@@ -46,19 +46,8 @@ Host $SSH_HOSTNAME
 
 `git clone git@github.com:jerrikneri/config.git Config`
 
-`echo "source $DOT_FILES_DIR/.index" >> $ZDOTDIR/.zshrc`
+`cd ~/code/dotfiles`
+
+`./install.sh`
 
 `source $ZDOTDIR/.zshrc`
-
-TODO: figure out how to automate ln -s symlinks
-
----
-
-## Local Dev Environment
-
-NVM
-`nvm install --lts`
-
-`nvm alias default node`
-
----

@@ -6,27 +6,29 @@ tap "koekeishiya/formulae"
 tap "qmk/qmk"
 
 # Brews
-brew "composer"
+#brew "composer"
 
 brew "git"
 
-brew "mycli"
+#brew "mycli"
 
-brew "mysql"
+#brew "mysql"
 
 brew "neovim"
 
-brew "nvm"
+brew "newsboat"
 
-brew "php"
+#brew "nvm"
 
-brew "pgcli"
+#brew "php"
 
-# brew "phpunit"
+#brew "pgcli"
 
-# brew "qmk/qmk/qmk"
+#brew "phpunit"
 
-brew "redis"
+#brew "qmk/qmk/qmk"
+
+#brew "redis"
 
 brew "ripgrep"
 
@@ -35,6 +37,8 @@ brew "sketchybar"
 brew "skhd"
 
 brew "tmux"
+
+brew "wakeonlan"
 
 brew "yabai"
 
@@ -55,7 +59,7 @@ cask "blockblock"
 
 cask "brave-browser"
 
-cask "dbeaver-community"
+cask "bruno"
 
 cask "discord"
 
@@ -63,7 +67,11 @@ cask "docker"
 
 cask "firefox"
 
+cask "font-hack-nerd-font"
+
 cask "google-chrome"
+
+cask "jetbrains-gateway"
 
 cask "karabiner-elements"
 
