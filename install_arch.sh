@@ -26,8 +26,8 @@ mkdir -p "$XDG_CONFIG_HOME/zsh"
 # clean existing
 rm $XDG_CONFIG_HOME/zsh/.zshrc
 
-ln -sf "$DOTFILES_CONFIG/zsh/.zshrc" "$XDG_CONFIG_HOME/zsh/.zshrc"
-ln -sf "$DOTFILES_CONFIG/zsh/aliases" "$XDG_CONFIG_HOME/zsh/aliases"
+ln -sf "$DOTFILES_CONFIG/zsh/.zshrc" "$ZDOTDIR/.zshrc"
+ln -sf "$DOTFILES_CONFIG/zsh/aliases" "$ZDOTDIR/aliases"
 
 rm -rf "$XDG_CONFIG_HOME/zsh/external"
-ln -sf "$DOTFILES_CONFIG/zsh/external" "$XDG_CONFIG_HOME/zsh"
+ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
