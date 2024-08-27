@@ -2,6 +2,13 @@
 
 echo 'Starting Arch Linux install script...'
 
+# Clean up existing config
+rm $HOME/.zshenv
+rm $ZDOTDIR/.zshrc
+rm $ZDOTDIR/aliases
+
+ln -s "$DOTFILES_CONFIG/zsh/.zshenv" "$HOME/.zshenv"
+
 ########
 # nvim #
 ########
