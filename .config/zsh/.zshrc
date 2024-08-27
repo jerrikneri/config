@@ -14,7 +14,8 @@ bindkey '\e[B' history-search-forward
 #bindkey -M vicmd "j" up-line-or-beginning-search
 #bindkey -M vicmd "k" down-line-or-beginning-search
 
-# CURRENT_OS set in $SCRIPTS/set_os.sh
+$SCRIPTS/set_os.sh
+
 # Perform actions based on the value of CURRENT_OS
 case "$CURRENT_OS" in
     macOS)
@@ -24,6 +25,7 @@ case "$CURRENT_OS" in
 
     arch)
         echo "You are on Arch Linux."
+        source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
         ;;
 
     debian)
