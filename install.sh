@@ -25,9 +25,10 @@ source $DOTFILES/.env
 # defined in .config/zsh/.zshenv
 for dir in $ALIASES $FUNCTIONS $MODULES; do
     for file in "$dir"/.*.sh; do
-        [ -f "$file" ] && source "$file"
+        [ -f "$file" ] && source "$file" && echo "source $file from $dir"
     done
 done
 
 # run install_arch.sh | install_macOS.sh | install_ubuntu.sh
 ./detect-os.sh
+
