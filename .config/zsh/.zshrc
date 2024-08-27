@@ -1,5 +1,15 @@
 fpath=($ZDOTDIR/external $fpath)
 
+# history setup
+setopt APPEND_HISTORY
+setopt SHARE_HISTORY
+setopt HIST_EXPIRE_DUPS_FIRST
+setopt EXTENDED_HISTORY
+
+# autocompletion using arrow keys (based on history)
+bindkey '\e[A' history-search-backward
+bindkey '\e[B' history-search-forward
+
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
