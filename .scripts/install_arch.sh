@@ -35,3 +35,5 @@ ln -sf "$DOTFILES_CONFIG/zsh/aliases" "$ZDOTDIR/aliases"
 
 rm -rf "$XDG_CONFIG_HOME/zsh/external"
 ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
+
+echo 'Arch Linux set up complete!'
