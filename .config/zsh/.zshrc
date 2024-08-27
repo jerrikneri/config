@@ -1,3 +1,5 @@
+echo 'Begin .zshrc'
+
 fpath=($ZDOTDIR/external $fpath)
 
 source "$XDG_CONFIG_HOME/zsh/aliases"
@@ -48,7 +50,10 @@ fi
 
 #source $HOME/code/dotfiles/.index
 if [ -f $SCRIPTS/import_aliases_functions_modules.sh ]; then
+    echo 'Sourcing from .zshrc'
     source $SCRIPTS/import_aliases_functions_modules.sh
 fi
 
 export PATH=$PATH:/opt/homebrew/bin
+
+echo 'End .zshrc'
