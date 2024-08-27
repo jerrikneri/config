@@ -7,9 +7,6 @@ source .config/zsh/.zshenv
 rm -f $HOME/.zshenv
 rm -f $ZDOTDIR/.zshrc
 
-# Set .zshenv in ~
-#cp .config/zsh/.zshenv $HOME
-
 # Check if .env does not exist
 if [ ! -f .env ]; then
     # Copy .env.example to .env
