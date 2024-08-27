@@ -4,6 +4,8 @@
 source .config/zsh/.zshenv
 
 # Clean up existing config
+cp $HOME/.zshenv $HOME/.zshenv.old
+cp $ZDOTDIR/.zshrc $ZDOTDIR/.zshrc.old
 rm -f $HOME/.zshenv
 rm -f $ZDOTDIR/.zshrc
 
