@@ -15,7 +15,7 @@ case "$os_name" in
         if [[ -f /etc/os-release ]]; then
             . /etc/os-release
             case "$ID" in
-                arch)
+                arch|archarm)
                     echo "Detected Arch Linux"
                     # Call Arch Linux install script
                     #./install-arch.sh
