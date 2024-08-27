@@ -18,13 +18,13 @@ case "$os_name" in
                 arch|archarm)
                     echo "Detected Arch Linux"
                     # Call Arch Linux install script
-                    ./install-arch.sh
+                    ./install_arch.sh
                     ;;
                 
                 ubuntu|debian)
                     echo "Detected Ubuntu/Debian"
                     # Call Ubuntu install script
-                    ./install-ubuntu.sh
+                    ./install_ubuntu.sh
                     ;;
                 
                 *)
