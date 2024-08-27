@@ -8,7 +8,7 @@ rm $HOME/.zshenv
 rm $ZDOTDIR/.zshrc
 
 # Set .zshenv in ~
-cp .config/zsh/.zshenv $HOME
+#cp .config/zsh/.zshenv $HOME
 
 # Check if .env does not exist
 if [ ! -f .env ]; then
