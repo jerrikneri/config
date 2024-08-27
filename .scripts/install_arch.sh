@@ -22,7 +22,6 @@ ln -sf "$DOTFILES_CONFIG/nvim/init.nvim" "$XDG_CONFIG_HOME/nvim"
 rm -rf "$XDG_CONFIG_HOME/X11"
 ln -s "$DOTFILES_CONFIG/X11" "$XDG_CONFIG_HOME"
 
-
 #######
 # zsh #
 #######
@@ -34,4 +33,12 @@ ln -sf "$DOTFILES_CONFIG/zsh/.zshrc" "$ZDOTDIR/.zshrc"
 rm -rf "$XDG_CONFIG_HOME/zsh/external"
 ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
 
+#########
+# fonts #
+#########
+
+mkdir -p "$XDG_DATA_HOME"
+cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
+
 echo 'Arch Linux set up complete!'
+
