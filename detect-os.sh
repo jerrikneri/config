@@ -8,23 +8,23 @@ case "$os_name" in
     Darwin)
         echo "Detected macOS"
         # Call macOS install script
-        #./install-macos.sh
+        ./install_macOS.sh
         ;;
 
     Linux)
         if [[ -f /etc/os-release ]]; then
             . /etc/os-release
             case "$ID" in
-                arch|archarm)
+                arch)
                     echo "Detected Arch Linux"
                     # Call Arch Linux install script
-                    #./install-arch.sh
+                    ./install-arch.sh
                     ;;
                 
                 ubuntu|debian)
                     echo "Detected Ubuntu/Debian"
                     # Call Ubuntu install script
-                    #./install-ubuntu.sh
+                    ./install-ubuntu.sh
                     ;;
                 
                 *)
