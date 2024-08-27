@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# List user-installed packages from pacman
+pacman -Qq > pacmans
+
+# List AUR packages
+yay -Qm | awk '{print $1}' > yays
+
+# Combine the lists and remove duplicates
+cat pacmans yays | sort | uniq
+
