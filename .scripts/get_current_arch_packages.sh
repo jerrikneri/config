@@ -7,5 +7,5 @@ pacman -Qq > $DOTFILES/arch/pacmans
 yay -Qm | awk '{print $1}' > $DOTFILES/arch/yays
 
 # Combine the lists and remove duplicates
-cat $DOTFILES/arch/pacmans $DOTFILES/arch/yays | sort | uniq
+cat $DOTFILES/arch/pacmans $DOTFILES/arch/yays | sort | uniq > $DOTFILES/arch/packages
 
