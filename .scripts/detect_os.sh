@@ -8,7 +8,7 @@ case "$os_name" in
     Darwin)
         echo "Detected macOS"
         # Call macOS install script
-        ./install_macOS.sh
+        $SCRIPTS/install_macOS.sh
         ;;
 
     Linux)
@@ -18,13 +18,13 @@ case "$os_name" in
                 arch|archarm)
                     echo "Detected Arch Linux"
                     # Call Arch Linux install script
-                    ./install_arch.sh
+                    $SCRIPTS/install_arch.sh
                     ;;
                 
                 ubuntu|debian)
                     echo "Detected Ubuntu/Debian"
                     # Call Ubuntu install script
-                    ./install_ubuntu.sh
+                    $SCRIPTS/install_ubuntu.sh
                     ;;
                 
                 *)
