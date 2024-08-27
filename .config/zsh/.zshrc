@@ -44,11 +44,6 @@ bindkey -M vicmd v edit-command-line
 
 source $DOTFILES_CONFIG/zsh/external/bd.zsh
 
-if [ $(command -v "fzf") ]; then
-#    source /usr/share/fzf/completion.zsh
-#    source /usr/share/fzf/key-bindings.zsh
-fi
-
 if [ "$(tty)" = "/dev/tty1" ];
 then
 #    pgrep i3 || exec startx "$XDG_CONFIG_HOME/X11/.xinitrc"
@@ -62,10 +57,16 @@ case "$CURRENT_OS" in
         echo "You are on macOS."
         source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
         source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        source <(fzf --zsh)
         ;;
 
     arch)
         echo "You are on Arch Linux."
+        if [ $(command -v "fzf") ]; then
+            source /usr/share/fzf/completion.zsh
+            source /usr/share/fzf/key-bindings.zsh
+        fi
+
         source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
         source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
         ;;

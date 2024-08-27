@@ -19,6 +19,10 @@ export HISTSIZE=10000
 # Maximum events in history file
 export SAVEHIST=10000
 
+# fzf and ripgrep
+export FZF_DEFAULT_COMMAND="rg --files --hidden --glob '!.git'"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+
 # DO NOT ADD .zhistory to Git
 
 ############
