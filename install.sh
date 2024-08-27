@@ -19,6 +19,7 @@ fi
 # Private Environment Variables
 source $DOTFILES/.env
 
+source $SCRIPTS/set_os.sh
 # run install_arch.sh | install_macOS.sh | install_ubuntu.sh
 $SCRIPTS/detect_os.sh
 

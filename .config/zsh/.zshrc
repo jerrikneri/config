@@ -14,7 +14,7 @@ bindkey '\e[B' history-search-forward
 #bindkey -M vicmd "j" up-line-or-beginning-search
 #bindkey -M vicmd "k" down-line-or-beginning-search
 
-$SCRIPTS/set_os.sh
+#source $SCRIPTS/set_os.sh
 
 # Perform actions based on the value of CURRENT_OS
 case "$CURRENT_OS" in
