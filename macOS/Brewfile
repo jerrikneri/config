@@ -38,6 +38,8 @@ brew "tmux"
 
 brew "yabai"
 
+brew "zsh-vi-mode"
+
 # Casks
 cask "alacritty"
 

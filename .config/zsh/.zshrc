@@ -10,6 +10,31 @@ setopt EXTENDED_HISTORY
 bindkey '\e[A' history-search-backward
 bindkey '\e[B' history-search-forward
 
+# try j k for arrows history autocomplete
+#bindkey -M vicmd "j" up-line-or-beginning-search
+#bindkey -M vicmd "k" down-line-or-beginning-search
+
+# CURRENT_OS set in $SCRIPTS/set_os.sh
+# Perform actions based on the value of CURRENT_OS
+case "$CURRENT_OS" in
+    macOS)
+        echo "You are on macOS."
+        source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+        ;;
+
+    arch)
+        echo "You are on Arch Linux."
+        ;;
+
+    debian)
+        echo "You are on Debian-based Linux."
+        ;;
+
+    *)
+        echo "Unknown or unsupported OS: $CURRENT_OS"
+        ;;
+esac
+
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history

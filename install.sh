@@ -21,7 +21,6 @@ source $DOTFILES/.env
 
 # run install_arch.sh | install_macOS.sh | install_ubuntu.sh
 $SCRIPTS/detect_os.sh
+$SCRIPTS/set_os.sh
 
 echo 'Install complete! Sourcing .zshrc'
-zsrc
-
