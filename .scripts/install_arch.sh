@@ -5,7 +5,6 @@ echo 'Starting Arch Linux install script...'
 # Clean up existing config
 rm -f $HOME/.zshenv
 rm -f $ZDOTDIR/.zshrc
-rm -f $ZDOTDIR/aliases
 
 ln -s "$DOTFILES_CONFIG/zsh/.zshenv" "$HOME/.zshenv"
 
@@ -31,7 +30,6 @@ ln -s "$DOTFILES_CONFIG/X11" "$XDG_CONFIG_HOME"
 mkdir -p "$XDG_CONFIG_HOME/zsh"
 
 ln -sf "$DOTFILES_CONFIG/zsh/.zshrc" "$ZDOTDIR/.zshrc"
-ln -sf "$DOTFILES_CONFIG/zsh/aliases" "$ZDOTDIR/aliases"
 
 rm -rf "$XDG_CONFIG_HOME/zsh/external"
 ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
