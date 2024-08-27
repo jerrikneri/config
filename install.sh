@@ -23,13 +23,8 @@ fi
 # Private Environment Variables
 source $DOTFILES/.env
 
-# defined in .config/zsh/.zshenv
-for dir in $ALIASES $FUNCTIONS $MODULES; do
-    for file in "$dir"/.*.sh; do
-        [ -f "$file" ] && source "$file" && echo "source $file from $dir"
-    done
-done
+$SCRIPTS/import_aliases_functions_modules.sh
 
 # run install_arch.sh | install_macOS.sh | install_ubuntu.sh
-./detect-os.sh
+$SCRIPTS/detect_os.sh
 
