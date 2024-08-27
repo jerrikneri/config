@@ -14,29 +14,6 @@ bindkey '\e[B' history-search-forward
 #bindkey -M vicmd "j" up-line-or-beginning-search
 #bindkey -M vicmd "k" down-line-or-beginning-search
 
-#source $SCRIPTS/set_os.sh
-
-# Perform actions based on the value of CURRENT_OS
-case "$CURRENT_OS" in
-    macOS)
-        echo "You are on macOS."
-        source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-        ;;
-
-    arch)
-        echo "You are on Arch Linux."
-        source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
-        ;;
-
-    debian)
-        echo "You are on Debian-based Linux."
-        ;;
-
-    *)
-        echo "Unknown or unsupported OS: $CURRENT_OS"
-        ;;
-esac
-
 zmodload zsh/complist
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
@@ -65,7 +42,7 @@ autoload -Uz edit-command-line
 zle -N edit-command-line
 bindkey -M vicmd v edit-command-line
 
-#source $DOTFILES_CONFIG/zsh/external/bd.zsh
+source $DOTFILES_CONFIG/zsh/external/bd.zsh
 
 if [ $(command -v "fzf") ]; then
 #    source /usr/share/fzf/completion.zsh
@@ -79,7 +56,28 @@ fi
 
 #source $DOTFILES_CONFIG/scripts.sh
 
-#source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+# Perform actions based on the value of CURRENT_OS
+case "$CURRENT_OS" in
+    macOS)
+        echo "You are on macOS."
+        source $(brew --prefix)/opt/zsh-vi-mode/share/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+        source $(brew --prefix)/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        ;;
+
+    arch)
+        echo "You are on Arch Linux."
+        source /usr/share/zsh/plugins/zsh-vi-mode/zsh-vi-mode.plugin.zsh
+        source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+        ;;
+
+    debian)
+        echo "You are on Debian-based Linux."
+        ;;
+
+    *)
+        echo "Unknown or unsupported OS: $CURRENT_OS"
+        ;;
+esac
 
 if [ -f $SCRIPTS/import_aliases_functions_modules.sh ]; then
     echo 'Sourcing from .zshrc'

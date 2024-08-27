@@ -42,6 +42,8 @@ brew "wakeonlan"
 
 brew "yabai"
 
+brew "zsh-syntax-highlighting"
+
 brew "zsh-vi-mode"
 
 # Casks
