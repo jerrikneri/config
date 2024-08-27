@@ -46,8 +46,3 @@ export PLANCK=planck/rev6
 
 # Kubernetes
 export KUBECONFIG=~/.kube/config
-
-# .zshenv
-export XDG_CONFIG_HOME="$HOME/.config"
-export ZDOTDIR="$XDG_CONFIG_HOME/zsh"
-
