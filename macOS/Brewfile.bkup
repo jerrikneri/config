@@ -1,73 +1,132 @@
-tap "browsh-org/browsh"
-tap "felixkratz/formulae"
-tap "homebrew/bundle"
-tap "homebrew/services"
+# Taps
+tap "FelixKratz/formulae"
+
 tap "koekeishiya/formulae"
-tap "osx-cross/arm"
-tap "osx-cross/avr"
+
 tap "qmk/qmk"
-brew "fzf"
+
+# Brews
+#brew "composer"
+
+brew "git"
+
+#brew "mycli"
+
+#brew "mysql"
+
 brew "neovim"
+
 brew "newsboat"
+
+#brew "nvm"
+
+#brew "php"
+
+#brew "pgcli"
+
+#brew "phpunit"
+
+#brew "qmk/qmk/qmk"
+
+#brew "redis"
+
 brew "ripgrep"
-brew "tailscale"
+
+brew "sketchybar"
+
+brew "skhd"
+
 brew "tmux"
-brew "tmuxinator"
+
 brew "wakeonlan"
+
+brew "yabai"
+
 brew "zsh-syntax-highlighting"
+
 brew "zsh-vi-mode"
-brew "felixkratz/formulae/sketchybar"
-brew "koekeishiya/formulae/skhd"
-brew "koekeishiya/formulae/yabai"
+
+# Casks
 cask "alacritty"
+
 cask "anki"
+
 cask "audio-hijack"
+
 cask "balenaetcher"
+
+cask "bitwarden"
+
 cask "blockblock"
+
 cask "brave-browser"
+
 cask "bruno"
+
 cask "discord"
+
 cask "docker"
+
 cask "firefox"
+
 cask "font-hack-nerd-font"
+
 cask "google-chrome"
+
 cask "jetbrains-gateway"
+
 cask "karabiner-elements"
+
 cask "keepassxc"
+
 cask "knockknock"
+
+# cask "librewolf" --no-quarantine
+
 cask "loopback"
+
 cask "lulu"
+
 cask "medis"
+
 cask "netiquette"
+
 cask "numi"
+
 cask "obsidian"
+
 cask "oversight"
+
 cask "phpstorm"
+
 cask "postman"
+
 cask "prusaslicer"
+
 cask "ransomwhere"
+
+cask "rectangle"
+
 cask "reikey"
+
 cask "slack"
+
 cask "spotify"
-cask "stats"
+
 cask "steam"
+
 cask "superduper"
+
 cask "tableplus"
+
 cask "taskexplorer"
+
 cask "utm"
+
+cask "via"
+
 cask "visual-studio-code"
+
 cask "whatsapp"
+
 cask "yubico-yubikey-manager"
-vscode "asvetliakov.vscode-neovim"
-vscode "christian-kohler.npm-intellisense"
-vscode "dbaeumer.vscode-eslint"
-vscode "eamodio.gitlens"
-vscode "ms-azuretools.vscode-docker"
-vscode "ms-vscode-remote.remote-containers"
-vscode "ms-vscode.cmake-tools"
-vscode "ms-vscode.cpptools"
-vscode "ms-vscode.cpptools-extension-pack"
-vscode "ms-vscode.cpptools-themes"
-vscode "tgreen7.vs-code-node-require"
-vscode "twxs.cmake"
-vscode "vscodevim.vim"
