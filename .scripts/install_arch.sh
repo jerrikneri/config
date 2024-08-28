@@ -26,7 +26,6 @@ ln -s "$DOTFILES_CONFIG/X11" "$XDG_CONFIG_HOME"
 # tmux #
 ########
 
-mkdir -p "$XDG_CONFIG_HOME/tmux"
 ln -sf $DOTFILES_CONFIG/tmux $XDG_CONFIG_HOME
 
 #########
