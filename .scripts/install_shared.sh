@@ -1,4 +1,3 @@
-
 echo 'Starting shared install script...'
 ########
 # zsh #
@@ -15,11 +14,10 @@ ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
 # tmux #
 ########
 
-if [ ! -d "$XDG_CONFIG_HOME/tmux" ]
-  then
-    mkdir "$XDG_CONFIG_HOME/tmux"
-    git clone https://github.com/tmux-plugins/tpm "$XDG_CONFIG_HOME/tmux/plugins/tpm"
-    #"$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
+if [ ! -d "$XDG_CONFIG_HOME/tmux" ]; then
+  mkdir "$XDG_CONFIG_HOME/tmux"
+  git clone https://github.com/tmux-plugins/tpm "$XDG_CONFIG_HOME/tmux/plugins/tpm"
+  "$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 fi
 
 ln -sf "$DOTFILES_CONFIG/tmux" "$XDG_CONFIG_HOME"
