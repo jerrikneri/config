@@ -22,6 +22,13 @@ ln -sf "$DOTFILES_CONFIG/nvim/init.nvim" "$XDG_CONFIG_HOME/nvim"
 rm -rf "$XDG_CONFIG_HOME/X11"
 ln -s "$DOTFILES_CONFIG/X11" "$XDG_CONFIG_HOME"
 
+########
+# tmux #
+########
+
+mkdir -p "$XDG_CONFIG_HOME/tmux"
+ln -sf $DOTFILES_CONFIG/tmux $XDG_CONFIG_HOME
+
 #########
 # fonts #
 #########
