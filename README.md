@@ -1,8 +1,10 @@
-# Config files
+# Dotfiles
 
 ## Setup
 
 1. Clone repo to directory of your choice.
-2. Add `source path/to/this/repo/.index` to profile.
-3. `cp .env.example .env`
+2. Modify export REPOS="$HOME/code"
+    export DOTFILES="$REPOS/dotfiles"
+    based on where you've cloned this repo.
+3. `./install.sh`
 4. Source your original profile.
