@@ -9,9 +9,7 @@ ln -sf $DOTFILES_CONFIG/tmux $XDG_CONFIG_HOME
 ln -sf $DOTFILES_CONFIG/tmuxinator $XDG_CONFIG_HOME
 ln -sf $DOTFILES_CONFIG/skhd $XDG_CONFIG_HOME
 ln -sf $DOTFILES_CONFIG/yabai $XDG_CONFIG_HOME
-ln -sf $DOTFILES_CONFIG/zsh/.zshrc $XDG_CONFIG_HOME/zsh/.zshrc
 
-rm -rf "$XDG_CONFIG_HOME/zsh/external"
-ln -sf "$DOTFILES_CONFIG/zsh/external" "$ZDOTDIR"
+source $DOTFILES/install_shared.sh
 
 echo 'MacOS set up complete!'
