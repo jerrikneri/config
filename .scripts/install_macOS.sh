@@ -10,6 +10,6 @@ ln -sf $DOTFILES_CONFIG/tmuxinator $XDG_CONFIG_HOME
 ln -sf $DOTFILES_CONFIG/skhd $XDG_CONFIG_HOME
 ln -sf $DOTFILES_CONFIG/yabai $XDG_CONFIG_HOME
 
-source $DOTFILES/install_shared.sh
+source $SCRIPTS/install_shared.sh
 
 echo 'MacOS set up complete!'

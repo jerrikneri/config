@@ -36,6 +36,6 @@ ln -sf $DOTFILES_CONFIG/tmux $XDG_CONFIG_HOME
 mkdir -p "$XDG_DATA_HOME"
 cp -rf "$DOTFILES/fonts" "$XDG_DATA_HOME"
 
-source $DOTFILES/install_shared.sh
+source $SCRIPTS/install_shared.sh
 
 echo 'Arch Linux set up complete!'
