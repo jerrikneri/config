@@ -229,6 +229,7 @@ libunibreak
 libunistring
 libunwind
 libusb
+libutempter
 libutf8proc
 libuv
 libva
@@ -378,6 +379,7 @@ tesseract-data-osd
 texinfo
 tigervnc
 tldr
+tmux
 tpm2-tss
 tracker3
 tree-sitter
