@@ -42,6 +42,7 @@ debugedit
 default-cursors
 desktop-file-utils
 device-mapper
+diff-so-fancy
 diffutils
 dmenu
 duktape
@@ -62,6 +63,7 @@ fltk
 fontconfig
 freetype2
 fribidi
+fzf
 gawk
 gc
 gcc
@@ -343,6 +345,7 @@ python-neovim
 python-shtab
 python-termcolor
 readline
+ripgrep
 rubberband
 ruby
 rubygems
@@ -477,5 +480,7 @@ zeromq
 zimg
 zlib
 zsh
+zsh-completions
+zsh-syntax-highlighting
 zsh-vi-mode
 zstd
