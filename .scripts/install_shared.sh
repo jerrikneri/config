@@ -22,7 +22,7 @@ if [ ! -d "$XDG_CONFIG_HOME/tmux" ]
     #"$XDG_CONFIG_HOME/tmux/plugins/tpm/bin/install_plugins"
 fi
 
-ln -sf "$DOTFILES/tmux/tmux.conf" "$XDG_CONFIG_HOME/tmux"
+ln -sf "$DOTFILES_CONFIG/tmux" "$XDG_CONFIG_HOME"
 
 # Generate default tmux conf
 # tmux -f /dev/null show-options -s \; show-options -g \; list-keys > "$DOTFILES/tmux/tmux.defaults.conf"
