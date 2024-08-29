@@ -3,6 +3,7 @@ adobe-source-code-pro-fonts
 adwaita-cursors
 adwaita-icon-theme
 adwaita-icon-theme-legacy
+alacritty
 alsa-lib
 alsa-topology-conf
 alsa-ucm-conf
@@ -119,10 +120,12 @@ jbig2dec
 jbigkit
 json-c
 json-glib
+k9s
 kbd
 keyutils
 kmod
 krb5
+kubectl
 lame
 lcms2
 leptonica
@@ -341,10 +344,13 @@ python-cairo
 python-colorama
 python-gobject
 python-greenlet
+python-libtmux
 python-msgpack
 python-neovim
 python-shtab
 python-termcolor
+python-typing_extensions
+python-yaml
 readline
 ripgrep
 rubberband
@@ -372,6 +378,7 @@ sudo
 systemd
 systemd-libs
 systemd-sysvcompat
+talosctl
 tar
 tesseract
 tesseract-data-afr
@@ -380,6 +387,7 @@ texinfo
 tigervnc
 tldr
 tmux
+tmuxp
 tpm2-tss
 tracker3
 tree-sitter
