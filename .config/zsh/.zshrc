@@ -51,6 +51,8 @@ fi
 
 #source $DOTFILES_CONFIG/scripts.sh
 
+source $SCRIPTS/set_os.sh
+
 # Perform actions based on the value of CURRENT_OS
 case "$CURRENT_OS" in
     macOS)
