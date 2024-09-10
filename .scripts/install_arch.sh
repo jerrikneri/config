@@ -21,7 +21,7 @@ ln -s "$DOTFILES_CONFIG/zsh/.zshenv" "$HOME/.zshenv"
 # -f force creation of link, remove existing if any
 
 # Entire directory for LazyVim
-ln -sf $DOTFILES_CONFIG/nvim $XDG_CONFIG_HOME
+ln -sf $DOTFILES_CONFIG/nvim $XDG_CONFIG_HOME/nvim
 
 # Link entire directory -f not needed as we wipe existing, and can't be used on directories
 rm -rf "$XDG_CONFIG_HOME/X11"
