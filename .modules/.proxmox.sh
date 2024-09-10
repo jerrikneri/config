@@ -8,7 +8,6 @@ alias pveup="wakeonlan $PROXMOX_MA"
 alias mmpve="ssh $MM_PVE_HOST@$MM_PVE_IP"
 
 # Ubuntu Server
-alias pve-ubuntu="ssh $K8S_HOST@$PVE_UBUNTU_IP"
 alias pssh-u-j="ssh $MM_PVE_HOST@$PVE_UBUNTU_JUMP_IP"
 
 # K8S
@@ -64,6 +63,18 @@ pve() {
     ;;
   *)
     echo "Usage: $0 {u|mm|j|a|k8c|k8n1|k8n2|k8n3|k3c|k3n1|k3n2|nfs}"
+    return 1
+    ;;
+  esac
+}
+
+homelab() {
+  case "$1" in
+  a)
+    pssh
+    ;;
+  *)
+    ssh $PROXMOX_HOST@$PROXMOX_HL_IP."$1"
     return 1
     ;;
   esac
