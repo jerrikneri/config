@@ -8,6 +8,8 @@ rm -f $ZDOTDIR/.zshrc
 
 ln -s "$DOTFILES_CONFIG/zsh/.zshenv" "$HOME/.zshenv"
 
+mkdir -p $XDG_CONFIG_HOME
+
 ########
 # nvim #
 ########
