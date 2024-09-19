@@ -5,6 +5,7 @@ alias la="ls -al"
 alias k="kubectl"
 alias nv="nvim"
 alias t="tmux"
+alias txt="tmuxinator"
 alias start-services="yabai --start-service && skhd --start-service"
 
 #Docker
