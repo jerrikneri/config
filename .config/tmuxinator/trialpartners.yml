@@ -1,6 +1,6 @@
-# /Users/jan/.config/tmuxinator/utm.yml
+# /Users/jan/.config/tmuxinator/trialpartners.yml
 
-name: utm
+name: trialpartners
 root: ~/
 
 # Optional tmux socket
@@ -24,7 +24,7 @@ root: ~/
 # on_project_exit: command
 
 # Run on project stop
-# on_project_stop: command
+# on_project_stop: tpdn
 
 # Runs in each window and pane before window/pane specific commands. Useful for setting up interpreter versions.
 # pre_window: rbenv shell 2.0.0-p247
@@ -46,12 +46,16 @@ root: ~/
 
 windows:
   - editor:
-      layout: main-vertical
+      layout: tiled 
       # Synchronize all panes of this window, can be enabled before or after the pane commands run.
       # 'before' represents legacy functionality and will be deprecated in a future release, in favour of 'after'
       # synchronize: after
       panes:
-        - vim
-        - guard
-  - server: bundle exec rails s
-  - logs: tail -f log/development.log
+        - sail:
+          - tpup
+        - npm:
+          - tpp
+          - sleep 5
+          - sail npm run dev
+        - tpp:
+          - tpp
