@@ -45,7 +45,7 @@ root: ~/
 # attach: false
 
 windows:
-  - editor:
+  - proxmox:
       layout: tiled 
       panes:
         - arch:

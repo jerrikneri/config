@@ -5,3 +5,4 @@
 /macOs/.config/tmux/plugins/
 
 ./macOS/Brewfile.lock.json
+.config/karabiner
